@@ -9,7 +9,27 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
-
+    /**
+     ViewController LifeCycle
+     뷰 컨트롤러의 생명주기
+     init
+     ⬇️
+     loadView
+     ⬇️
+     ViewDidLoad    뷰가 메모리에 적재되었다. 뷰가 로드되었다.
+     ⬇️
+     ViewWillAppear    뷰가 유저눈에 보이게 될 것이다.
+     ⬇️
+     ViewisAppear   뷰가 유저눈에 나타나고있다.
+     ⬇️
+     ViewDidAppear  뷰가 유저눈에 나타났다.
+     ⬇️
+     ViewWillDisappear  뷰가 사라질 예정이다
+     ⬇️
+     ViewDidDisappear   뷰가 사라진다.
+     ⬇️
+     deinit
+     */
     private lazy var button: UIButton = {
         let button = UIButton()
         button.setTitle("다른페이지로 이동", for: .normal)
